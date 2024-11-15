@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey-form.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Survey Form</h1>
+        <p id="description">Please take a few minutes to complete this survey for any feedback.</p>
+    </div>
+    
+    <div id="form">
+        <form id="survey-form">
+            <!-- Name Question -->
+            <div class="questions">
+                <label for="name" class="form-label">Name</label><br>
+                <div class="responses">
+                    <input type="text" id="name" placeholder="Enter Name" required><br>
+                </div>
+            </div>
+
+            <!-- Email Question -->
+            <div class="questions">
+                <label for="email" class="form-label">Email</label><br>
+                <div class="responses">
+                    <input type="email" id="email" placeholder="Enter Email" required><br>
+                </div>
+            </div>
+
+            <!-- Rating Question -->
+            <div class="questions">
+                <label for="rating" class="form-label">How would you rate the design and visual appeal of the website?</label><br>
+                <div class="responses">
+                    <input type="number" id="rating" min="1" max="10" placeholder="0" required><br>
+                </div>
+            </div>
+
+            <!-- Dropdown Question -->
+            <div class="questions">
+                <label for="dropdown" class="form-label">Did you find the website easy to use?</label><br>
+                <div class="responses">
+                    <select id="dropdown" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+                </div>
+            </div>
+
+            <!-- Project Difficulty Level Question -->
+            <div class="questions">
+                <label for="project-level" class="form-label">How would you rate the difficulty level of the projects displayed?</label><br>
+                <div class="responses">
+                    <input type="radio" name="project-level" value="Too easy"> Too easy<br>
+                    <input type="radio" name="project-level" value="Easy"> Easy<br>
+                    <input type="radio" name="project-level" value="Moderate"> Moderate<br>
+                    <input type="radio" name="project-level" value="Challenging"> Challenging<br>
+                    <input type="radio" name="project-level" value="Too Challenging"> Too Challenging<br>        
+                </div>
+            </div>
+
+            <!-- Visual Design Issues -->
+            <div class="questions">
+                <label for="visual-issues" class="form-label">What visual design issues did you notice?</label><br>
+                <div class="responses">
+                    <input class="visual-issues" type="checkbox" id="issue1"> Inconsistent color usage<br>
+                    <input class="visual-issues" type="checkbox" id="issue2"> Poor text readability<br>
+                    <input class="visual-issues" type="checkbox" id="issue3"> Overly cluttered layout<br>
+                    <input class="visual-issues" type="checkbox" id="issue4"> Images not loading properly<br>
+                    <input class="visual-issues" type="checkbox" id="issue5"> Text or elements overlapping<br>
+                    <input class="visual-issues" type="checkbox" id="issue6"> Visual elements scaling incorrectly on different devices<br>
+                </div>
+            </div>
+
+            <!-- Additional Comments -->
+            <div class="questions">
+                <label for="additional-comments" class="form-label">What suggestions do you have to improve the website or presentation of projects?</label><br>
+                <div class="responses">
+                    <textarea id="additional-comments" placeholder="Enter your comments here" required></textarea><br>
+                </div>
+            </div>
+
+            <button type="submit">Submit!</button>
+        </form>
+    </div>
+</body>
+</html>
